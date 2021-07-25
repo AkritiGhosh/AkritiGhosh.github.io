@@ -15,3 +15,12 @@ function stickyFunction() {
   }
 };
 
+function getSection(text) {
+  fetch(text)
+    .then(response => {
+      return response.text()
+    })
+    .then(data => {
+      document.getElementsByClassName("main-section")[0].innerHTML = data;
+    });
+}
