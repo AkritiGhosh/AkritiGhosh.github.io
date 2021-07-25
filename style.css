@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
+.hide {
+  display: none; }
+
+header .intro-header {
+  height: 150px; }
+  header .intro-header .name-wrapper {
+    height: inherit;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    float: left; }
+    header .intro-header .name-wrapper .name {
+      font-family: "Zen Tokyo Zoo", cursive;
+      font-size: 72px;
+      color: black; }
+  header .intro-header .title-wrapper {
+    overflow: hidden;
+    float: right;
+    height: 25px;
+    margin: 62px 0; }
+  header .intro-header .title {
+    height: 150%;
+    text-align: center; }
+header .menu-header {
+  height: 50px;
+  background: #e9e9e9;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0px 0px 10px 0px #33333333; }
+  header .menu-header.sticky {
+    height: 75px;
+    position: fixed;
+    top: 0;
+    width: 100%; }
+    header .menu-header.sticky .menu-item {
+      height: 75px; }
+  header .menu-header .logo .img-responsive {
+    height: 48px;
+    width: auto; }
+  header .menu-header .menu-item {
+    font-family: "Acme", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; }
+    header .menu-header .menu-item:hover, header .menu-header .menu-item:active {
+      cursor: pointer;
+      border-bottom: 3px solid;
+      box-shadow: 0px 0px 25px 10px #00000010; }
+
+main {
+  background-image: linear-gradient(to right, #f2f2f2, 90%, #f2f2f205), url(./bg.gif);
+  background-repeat: repeat-y;
+  background-position: right;
+  height: 1000px;
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
