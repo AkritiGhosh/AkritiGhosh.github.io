@@ -1,4 +1,5 @@
 window.onscroll = function () { stickyFunction() };
+window.onload = function(){getSection("home.html")}
 var header = document.getElementsByClassName("menu-header")[0];
 var sticky = header.offsetTop;
 

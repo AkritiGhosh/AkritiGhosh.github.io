@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 .hide {
   display: none; }
 
@@ -57,24 +58,57 @@ main {
   background-image: linear-gradient(to right, #f2f2f2, 90%, #f2f2f205), url(./bg.gif);
   background-repeat: repeat-y;
   background-position: right;
-  height: 1000px;
-  width: 100%; }
-  main #home .intro {
-    text-align: center;
-    font-family: monospace;
-    font-size: 40px;
-    letter-spacing: 0px;
-    color: #7878c5;
-    width: 242px;
-    overflow: hidden;
-    white-space: nowrap; }
-  main #home .typed {
-    animation: typewriter 2s steps(11) 1s 1 normal both; }
+  height: auto;
+  width: 100%;
+  height: 500px; }
+  main .main-section {
+    height: inherit; }
+  main #home {
+    display: flex;
+    height: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+    main #home .intro {
+      text-align: center;
+      font-family: 'VT323', monospace;
+      font-size: 40px;
+      letter-spacing: 0px;
+      color: #2c2938;
+      overflow: hidden;
+      white-space: nowrap; }
+    main #home #l1 {
+      width: 224px;
+      animation: typewriter1 2s steps(14) 1s 1 normal both; }
+    main #home #l2 {
+      width: 640px;
+      animation: typewriter2 4s steps(40) 4s 1 normal both; }
+    main #home #l3 {
+      width: 976px;
+      animation: typewriter3 4s steps(61) 8s 1 normal both; }
+    main #home #l4 {
+      width: 816px;
+      animation: typewriter4 2s steps(51) 13s 1 normal both; }
 
-@keyframes typewriter {
+@keyframes typewriter1 {
   from {
     width: 0; }
   to {
-    width: 242px; } }
+    width: 224px; } }
+@keyframes typewriter2 {
+  from {
+    width: 0; }
+  to {
+    width: 640px; } }
+@keyframes typewriter3 {
+  from {
+    width: 0; }
+  to {
+    width: 976px; } }
+@keyframes typewriter4 {
+  from {
+    width: 0; }
+  to {
+    width: 816px; } }
 
 /*# sourceMappingURL=style.css.map */
