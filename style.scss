@@ -82,9 +82,35 @@ header {
   }
 }
 main {
-  background-image: linear-gradient(to right, #f2f2f2, 90%, #f2f2f205), url(./bg.gif);
+  background-image: linear-gradient(to right, #f2f2f2, 90%, #f2f2f205),
+    url(./bg.gif);
   background-repeat: repeat-y;
   background-position: right;
   height: 1000px;
   width: 100%;
+
+  #home {
+    .intro {
+      text-align: center;
+      font-family: monospace;
+      font-size: 40px;
+    letter-spacing: 0px;
+      color: #7878c5;
+      width: 22px * 11;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .typed {
+      animation: typewriter 2s steps(11) 1s 1 normal both
+    }
+  }
+}
+
+@keyframes typewriter {
+  from{
+    width: 0;
+  }
+  to{
+    width: 22px * 11;
+  }
 }

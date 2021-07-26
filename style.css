@@ -59,5 +59,22 @@ main {
   background-position: right;
   height: 1000px;
   width: 100%; }
+  main #home .intro {
+    text-align: center;
+    font-family: monospace;
+    font-size: 40px;
+    letter-spacing: 0px;
+    color: #7878c5;
+    width: 242px;
+    overflow: hidden;
+    white-space: nowrap; }
+  main #home .typed {
+    animation: typewriter 2s steps(11) 1s 1 normal both; }
+
+@keyframes typewriter {
+  from {
+    width: 0; }
+  to {
+    width: 242px; } }
 
 /*# sourceMappingURL=style.css.map */
