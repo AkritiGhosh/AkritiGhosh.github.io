@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap");
 .hide {
   display: none; }
 
@@ -71,7 +71,7 @@ main {
     align-items: flex-start; }
     main #home .intro {
       text-align: center;
-      font-family: 'VT323', monospace;
+      font-family: 'Xanh Mono', monospace;
       font-size: 40px;
       letter-spacing: 0px;
       color: #2c2938;
