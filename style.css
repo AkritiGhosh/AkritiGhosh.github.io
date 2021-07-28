@@ -59,13 +59,12 @@ main {
   background-repeat: repeat-y;
   background-position: right;
   height: auto;
-  width: 100%;
-  height: 500px; }
+  width: 100%; }
   main .main-section {
     height: inherit; }
   main #home {
     display: flex;
-    height: inherit;
+    height: 500px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; }
@@ -78,37 +77,43 @@ main {
       overflow: hidden;
       white-space: nowrap; }
     main #home #l1 {
-      width: 224px;
+      width: 280px;
       animation: typewriter1 2s steps(14) 1s 1 normal both; }
     main #home #l2 {
-      width: 640px;
+      width: 800px;
       animation: typewriter2 4s steps(40) 4s 1 normal both; }
     main #home #l3 {
-      width: 976px;
+      width: 1220px;
       animation: typewriter3 4s steps(61) 8s 1 normal both; }
     main #home #l4 {
-      width: 816px;
+      width: 1020px;
       animation: typewriter4 2s steps(51) 13s 1 normal both; }
+  main #certificate .item {
+    height: 400px;
+    margin: 10px 20px;
+    border: 2px solid #8f8f8f;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 10px #00000055); }
 
 @keyframes typewriter1 {
   from {
     width: 0; }
   to {
-    width: 224px; } }
+    width: 280px; } }
 @keyframes typewriter2 {
   from {
     width: 0; }
   to {
-    width: 640px; } }
+    width: 800px; } }
 @keyframes typewriter3 {
   from {
     width: 0; }
   to {
-    width: 976px; } }
+    width: 1220px; } }
 @keyframes typewriter4 {
   from {
     width: 0; }
   to {
-    width: 816px; } }
+    width: 1020px; } }
 
 /*# sourceMappingURL=style.css.map */

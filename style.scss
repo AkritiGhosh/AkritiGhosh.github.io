@@ -89,14 +89,13 @@ main {
   background-position: right;
   height: auto;
   width: 100%;
-  height: 500px;
   .main-section{
     height: inherit;
   }
 
   #home {
     display: flex;
-    height: inherit;
+    height: 500px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -111,30 +110,41 @@ main {
       white-space: nowrap;
     }
     #l1 {
-      width: 16px * 14;
+      width: 20px * 14;
       animation: typewriter1 2s steps(14) 1s 1 normal both;
     }
     #l2 {
-      width: 16px * 40;
+      width: 20px * 40;
       animation: typewriter2 4s steps(40) 4s 1 normal both;
     }
     #l3 {
-      width: 16px * 61;
+      width: 20px * 61;
       animation: typewriter3 4s steps(61) 8s 1 normal both;
     }
     #l4 {
-      width: 16px * 51;
+      width: 20px * 51;
       animation: typewriter4 2s steps(51) 13s 1 normal both;
     }
    
   }
+  #certificate{
+    .item{
+      height: 400px;
+      margin: 10px 20px;
+      border: 2px solid #8f8f8f;
+      border-radius: 5px;
+      filter: drop-shadow(0 0 10px #00000055);
+    }
+  }
 }
+
+
 @keyframes typewriter1 {
   from {
     width: 0;
   }
   to {
-    width: 16px * 14;
+    width: 20px * 14;
   }
 }
 @keyframes typewriter2 {
@@ -142,7 +152,7 @@ main {
     width: 0;
   }
   to {
-    width: 16px * 40;
+    width: 20px * 40;
   }
 }
 @keyframes typewriter3 {
@@ -150,7 +160,7 @@ main {
     width: 0;
   }
   to {
-    width: 16px * 61;
+    width: 20px * 61;
   }
 }
 @keyframes typewriter4 {
@@ -158,6 +168,6 @@ main {
     width: 0;
   }
   to {
-    width: 16px * 51;
+    width: 20px * 51;
   }
 }
