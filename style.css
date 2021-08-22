@@ -5,7 +5,7 @@
   display: none; }
 
 header .intro-header {
-  height: 150px; }
+  height: 6em; }
   header .intro-header .name-wrapper {
     height: inherit;
     position: absolute;
@@ -25,7 +25,7 @@ header .intro-header {
     height: 150%;
     text-align: center; }
 header .menu-header {
-  height: 50px;
+  height: 4em;
   background: #e9e9e9;
   display: flex;
   align-items: center;
@@ -58,7 +58,7 @@ main {
   background-image: linear-gradient(to right, #f2f2f2, 90%, #f2f2f205), url(./bg.gif);
   background-repeat: repeat-y;
   background-position: right;
-  height: auto;
+  height: 52em;
   width: 100%; }
   main .main-section {
     height: inherit; }
@@ -70,7 +70,7 @@ main {
     align-items: flex-start; }
     main #home .intro {
       text-align: center;
-      font-family: 'Xanh Mono', monospace;
+      font-family: "Xanh Mono", monospace;
       font-size: 40px;
       letter-spacing: 0px;
       color: #2c2938;
@@ -88,12 +88,29 @@ main {
     main #home #l4 {
       width: 1020px;
       animation: typewriter4 2s steps(51) 13s 1 normal both; }
-  main #certificate .item {
-    height: 400px;
-    margin: 10px 20px;
-    border: 2px solid #8f8f8f;
-    border-radius: 5px;
-    filter: drop-shadow(0 0 10px #00000055); }
+  main #certificate {
+    margin: 30px 0; }
+    main #certificate .carousel {
+      height: 700px; }
+      main #certificate .carousel .item iframe {
+        height: 645px;
+        width: 825px;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%); }
+      main #certificate .carousel .item:nth-of-type(4) iframe, main #certificate .carousel .item:nth-of-type(5) iframe, main #certificate .carousel .item:nth-of-type(6) iframe {
+        height: 587px; }
+    main #certificate .carousel-control {
+      background: none; }
+      main #certificate .carousel-control .glyphicon::before {
+        color: black; }
+    main #certificate .carousel-indicators li {
+      border-color: black;
+      width: 40px;
+      height: 5px; }
+      main #certificate .carousel-indicators li.active {
+        background-color: black; }
 
 @keyframes typewriter1 {
   from {
