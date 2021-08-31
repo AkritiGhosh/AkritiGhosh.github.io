@@ -34,7 +34,8 @@ header .menu-header {
     height: 75px;
     position: fixed;
     top: 0;
-    width: 100%; }
+    width: 100%;
+    z-index: 10; }
     header .menu-header.sticky .menu-item {
       height: 75px; }
   header .menu-header .logo .img-responsive {
@@ -58,13 +59,15 @@ main {
   background-image: linear-gradient(to right, #f2f2f2, 90%, #f2f2f205), url(./bg.gif);
   background-repeat: repeat-y;
   background-position: right;
-  height: 52em;
+  height: auto;
   width: 100%; }
+  main .container {
+    padding: 0 0 0 0; }
   main .main-section {
-    height: inherit; }
+    height: calc(100% - 140px); }
   main #home {
     display: flex;
-    height: 500px;
+    height: 795px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; }
@@ -89,7 +92,8 @@ main {
       width: 1020px;
       animation: typewriter4 2s steps(51) 13s 1 normal both; }
   main #certificate {
-    margin: 30px 0; }
+    margin: 30px 0;
+    height: 735px; }
     main #certificate .carousel {
       height: 700px; }
       main #certificate .carousel .item iframe {
@@ -111,6 +115,33 @@ main {
       height: 5px; }
       main #certificate .carousel-indicators li.active {
         background-color: black; }
+  main #portfolio {
+    margin: 50px 0; }
+    main #portfolio .item {
+      width: calc(33% - 20px);
+      height: 400px;
+      border: 1px solid #00000040;
+      border-radius: 15px;
+      margin: 10px;
+      padding: 0; }
+      main #portfolio .item .subtitle {
+        font-family: "Acme", sans-serif;
+        font-size: 20px;
+        text-transform: capitalize;
+        margin: 20px; }
+      main #portfolio .item .img-responsive {
+        width: 100%;
+        height: 330px;
+        border-radius: 15px 15px 0 0; }
+      main #portfolio .item:hover .desc {
+        width: 100%;
+        background: linear-gradient(0deg, #000000cc, #00000099);
+        border-radius: 15px;
+        top: 0;
+        position: absolute;
+        z-index: 6;
+        height: 100%;
+        display: block !important; }
 
 @keyframes typewriter1 {
   from {
